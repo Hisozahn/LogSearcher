@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.igor.logsearcher.*?>
+
+<fx:root type="javafx.scene.layout.BorderPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" >
+    <left>
+        <Button text="Click Me!" onAction="#handleClickMeButton" fx:id="click" />
+    </left>
+    <center>
+        <Label minHeight="16" minWidth="69" fx:id="label" />
+    </center>
+    <right>
+        <Button text="New tab" onAction="#handleNewTabButton" fx:id="newTab" />
+    </right>
+</fx:root>
