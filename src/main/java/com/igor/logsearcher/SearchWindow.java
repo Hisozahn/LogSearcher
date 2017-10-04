@@ -3,11 +3,11 @@ package com.igor.logsearcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.control.Label;
 import java.io.IOException;
-import javafx.scene.layout.GridPane;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
-public class SearchWindow extends GridPane {
+public class SearchWindow extends AnchorPane {
     
     private static final String FXML_PATH = "/fxml/Search.fxml";
     public SearchWindow(Runnable newTab) {
@@ -30,18 +30,18 @@ public class SearchWindow extends GridPane {
     private final Runnable newTab;
     
     @FXML
-    private Label label;
+    private TextField searchField;
     
     @FXML
     private void handleClickMeButton(ActionEvent event) {
         System.out.println("You clicked me!");
-        label.setText("Hello!");
+        searchField.setText("Hello!");
     }
     
-    @FXML
+    /*@FXML
     private void handleNewTabButton(ActionEvent event) {
         newTab.run();
         System.out.println("New tab opened!");
-        label.setText("Good buy!");
-    }
+        searchField.setText("Good buy!");
+    }*/
 }

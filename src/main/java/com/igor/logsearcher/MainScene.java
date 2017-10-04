@@ -1,12 +1,9 @@
 package com.igor.logsearcher;
 
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
 import javafx.scene.layout.AnchorPane;
@@ -42,9 +39,4 @@ public class MainScene extends AnchorPane {
     private void handleNewTabButton(ActionEvent event) {
         addNewTab();
     }
-    /*
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        addNewTab();
-    }*/
 }
